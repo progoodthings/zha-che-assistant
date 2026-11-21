@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.venv/
+build/
+build_source/
+dist/
+*.spec
+*.exe
+*.log
+.env
+.env.*
+settings.json
+dashboard.json
+*.request
