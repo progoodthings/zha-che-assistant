@@ -5,7 +5,7 @@ import os
 from pathlib import Path
 from urllib.parse import urlsplit
 
-APP_NAME = '炸撤小助手'
+APP_NAME = 'DeltaForce-ZhaChe'
 
 FEATURES = {'restart': '退出后自动重启', 'switch': '拉闸撤离点',
             'ascend': '飞升撤离点', 'audio': '飞升任务音效'}

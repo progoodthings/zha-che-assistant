@@ -137,7 +137,7 @@ def cmd_restart_now():
 
 def cmd_loop():
     print("=" * 64)
-    print("炸撤小助手 · 撤离点监控 / 飞升音效 / 自动重启")
+    print("DeltaForce-ZhaChe · 撤离点监控 / 飞升音效 / 自动重启")
     print("版本：2026-11-15（核心精简版）")
     print(f"扫描间隔：{config.SCAN_INTERVAL}s；开启判定：绿色图标 + 可信倒计时")
     print(f"自动重启：{'开' if config.AUTO_RESTART else '关'} | "

@@ -1,4 +1,4 @@
-# 炸撤小助手
+# DeltaForce-ZhaChe
 
 面向《三角洲行动》航天基地的 Windows 监控工具。在地图保持可见时，它可以识别拉闸和飞升撤离点的开启状态，并把倒计时、音效和重启状态显示在监控主页。
 
@@ -10,7 +10,7 @@
 
 ## 开始使用
 
-1. 在 [GitHub Releases](https://github.com/progoodthings/zha-che-assistant/releases) 下载 `zha-che-assistant-windows-x64.exe`。使用 Windows 10 或 11 的 64 位系统。双击运行，程序会请求管理员权限。
+1. 在 [GitHub Releases](https://github.com/progoodthings/DeltaForce-ZhaChe/releases) 下载 `DeltaForce-ZhaChe-windows-x64.exe`。使用 Windows 10 或 11 的 64 位系统。双击运行，程序会请求管理员权限。
 2. 在「监控」页按需启用撤离点监控、飞升音效或自动重启。需要重启功能时，先在 WeGame 打开《三角洲行动》的启动页面。
 3. 使用飞升音效联动时，先到「设置」分别框选战斗页、地图页的游戏剩余时间。撤离点识别依赖可见的游戏地图，建议先用正常缩放。
 4. 点击「开始监控」。有待发飞升信息时，在游戏前台按 **F8**，程序会回车打开聊天框、粘贴消息并回车发送。**F10** 停止监控并取消待执行的重启。
@@ -20,7 +20,7 @@
 ## 配置 Server 酱微信通知
 
 1. 登录 [Server 酱 Turbo](https://sct.ftqq.com/)，在「通道配置」中设置微信接收方式，再到「SendKey」页面复制以 `SCT` 开头的密钥。[官方获取教程](https://sct.ftqq.com/docs/getting-started/sendkey/)
-2. 在炸撤小助手的「通知」页粘贴到「默认 Server 酱地址」，开启所需通知类型并点击「保存设置」。需要把某类通知发往不同地址时，再填写该项的独立地址。
+2. 在 DeltaForce-ZhaChe 的「通知」页粘贴到「默认 Server 酱地址」，开启所需通知类型并点击「保存设置」。需要把某类通知发往不同地址时，再填写该项的独立地址。
 3. 选择已启用的通知类型，点击「发送测试通知」，在微信和运行记录中确认结果。「监控」和「通知」页都提供内置使用指南。
 
 推送配置存于当前 Windows 用户的 `%LOCALAPPDATA%\DeltaForceMonitor\settings.json`。SendKey 可用于向你的接收通道发消息，请勿把配置文件、完整推送链接或显示密钥的截图公开。发布版启动后由使用者自行配置。
@@ -41,4 +41,4 @@ py -3.11 -m pip install -r requirements.txt pyinstaller
 py -3.11 build_exe.py
 ```
 
-生成的程序位于 `dist/炸撤小助手.exe`。请把 SendKey 填在软件里，以免写入源码或被打包。界面使用的 Tabler 图标许可见 [assets/ui/LICENSE.txt](assets/ui/LICENSE.txt)。
+生成的程序位于 `dist/DeltaForce-ZhaChe.exe`。请把 SendKey 填在软件里，以免写入源码或被打包。界面使用的 Tabler 图标许可见 [assets/ui/LICENSE.txt](assets/ui/LICENSE.txt)。
